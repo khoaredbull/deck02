@@ -1,0 +1,189 @@
+.main-content{
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 40px;
+    padding-top: 40px;
+    background-color: @bg-color-2;
+    display: grid;
+    grid-template-columns: 74.41% 25.59%;
+    .main-content-left{
+        .section-banner{
+            .container{
+                .banner-wrapper{
+                    padding-bottom: 32px;
+                    .banner{
+                        position: relative;
+                        width: 100%;
+                        padding-top: 57.31%;
+                        background-image: url(../images/green-chameleon-176136.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        object-fit: cover;
+                            .banner-item{
+                                position: absolute;
+                                width: 100%;
+                                top: 141px;
+                                max-width: 630px;
+                                left: 50%;
+                                transform: translateX(-50%); 
+                                text-align: center;                                    
+                            }
+                                
+                            .banner-prev{
+                                .banner-prev-icon{
+                                    padding: 18px 17px;
+                                    background-color: @bg-color-4;
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    &:hover{
+                                        background-color: @bg-color-3;
+                                    }
+                                }
+                            }
+                            .banner-next{
+                                .banner-next-icon{
+                                    padding: 18px 17px;
+                                    background-color: @bg-color-4;
+                                    position: absolute;
+                                    right: 0px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    &:hover{
+                                        background-color: @bg-color-3;
+                                    }
+                                }
+                            }
+                            
+                        
+                    }               
+                }
+            }
+        }
+    }
+}
+.banner-item-link{
+    color: @f-color-2;
+    padding: 5px 30px 10px 25px;
+    background-color: @bg-color-3;                                
+}
+.banner-item-title{
+    font-size: @f-size-8;
+    color: @f-color-2;
+    line-height: 1.5;
+    padding-top: 39px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.banner-item-text{
+    font-family: lato-regular;
+    font-size: @f-size-5;
+    color: @f-color-3;
+    max-width: 470px;
+    margin: auto;
+}
+.banner-info{
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    text-align: center;
+    & .banner-info-icon:last-child{
+        padding-right: 0px;
+    }
+    .banner-info-icon{
+        color: @f-color-2;
+        font-size: @f-size-2;
+        font-family: lato-medium;
+        padding-right: 13px;                                 
+        img{
+            padding-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1255px){
+    .main-content .main-content-left .section-banner .container .banner-wrapper .banner 
+    .banner-item{
+        top: 90px;
+        .banner-item-title{
+            font-size: @f-size-7;
+        }
+    }
+}
+@media screen and (max-width: 1023px){
+    .main-content{
+        padding: 40px 20px 0px 20px;
+        display: block;
+        .main-content-left{
+            .section-banner{
+                .container{
+                    .banner-wrapper{
+                        padding-bottom: 16px;
+                        .banner{
+                            padding-top: 79.81%;
+                            background-image: url(../images/green-chameleon-1761362.jpg);
+                            .banner-item{
+                                top: 111px;
+                                max-width: 470px;
+                                .banner-item-title{
+                                    padding-top: 42px;
+                                    font-size: @f-size-8;
+                                }
+                                .banner-item-text{
+                                    line-height: 1.4;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .main-content{
+        padding: 20px 20px 0px 20px;
+        .main-content-left{
+            .section-banner{
+                .container{
+                    .banner-wrapper{
+                        padding-bottom: 20px;
+                        .banner{
+                            padding-top: 131.64%;
+                            background-image: url(../images/green-chameleon-1761361.jpg);
+                            .banner-item{
+                                top: 92px;
+                                max-width: 290px;
+                                .banner-item-title{
+                                    font-size: @f-size-7;
+                                    padding-top: 30px;
+                                }
+                                .banner-item-text{
+                                    display: none;
+                                }
+                            }
+                            .banner-info{
+                                bottom: 32px;
+                            }
+                            .banner-prev{
+                                display: none;
+                            }
+                            .banner-next{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 330px){
+    .main-content .main-content-left .section-banner .container .banner-wrapper .banner 
+        .banner-item {
+            .banner-item-title{
+                font-size: @f-size-6;
+                }
+        }      
+}

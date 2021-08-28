@@ -1,0 +1,774 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: lato-regular;
+  src: url(../css/font/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: lato-medium;
+  src: url(../css/font/Lato-Medium_0.ttf);
+}
+@font-face {
+  font-family: lato-semibold;
+  src: url(../css/font/Lato-Semibold.ttf);
+}
+@font-face {
+  font-family: lato-bold;
+  src: url(../css/font/Lato-Bold.ttf);
+}
+header {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+header .header-wrapper {
+  border-bottom: 1px solid #EBEBEB;
+  background-color: #FFFFFF;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+}
+header .header-wrapper .logo {
+  width: 8.7%;
+}
+header .header-wrapper .navbar {
+  width: 91.3%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0px;
+}
+header .header-wrapper .navbar .navbar-nav {
+  flex-direction: row;
+}
+header .header-wrapper .navbar .navbar-nav .nav-item:first-child {
+  padding-left: 0px;
+}
+header .header-wrapper .navbar .navbar-nav .nav-item:last-child {
+  padding-right: 0px;
+}
+header .header-wrapper .navbar .navbar-nav .nav-item {
+  padding: 0px 27px;
+  list-style-type: none;
+}
+header .header-wrapper .navbar .navbar-toggler {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0px;
+}
+header .header-wrapper .navbar .navbar-toggler .fa-bars {
+  color: #1D1F24;
+  font-size: 30px;
+}
+.container {
+  max-width: 100%;
+  padding: 0px;
+}
+.logo-link {
+  font-size: 24px;
+  color: #1D1F24;
+  font-family: lato-bold;
+  position: relative;
+}
+.logo-link::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #FF565C;
+  position: absolute;
+  bottom: 5px;
+  right: -5px;
+}
+.nav-link {
+  font-size: 14px;
+  color: #DADADB;
+}
+.nav-link:hover {
+  color: #FF565C;
+}
+@media screen and (max-width: 1023px) {
+  header .header-wrapper {
+    padding: 30px 20px;
+  }
+  header .header-wrapper .navbar .navbar-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .header-wrapper {
+    padding: 20px 20px;
+  }
+  header .header-wrapper .logo {
+    width: 50%;
+  }
+  header .header-wrapper .navbar {
+    width: 50%;
+  }
+}
+.main-content {
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 0px 40px;
+  padding-top: 40px;
+  background-color: #F9FAFC;
+  display: grid;
+  grid-template-columns: 74.41% 25.59%;
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper {
+  padding-bottom: 32px;
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .banner {
+  position: relative;
+  width: 100%;
+  padding-top: 57.31%;
+  background-image: url(../images/green-chameleon-176136.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item {
+  position: absolute;
+  width: 100%;
+  top: 141px;
+  max-width: 630px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-prev .banner-prev-icon {
+  padding: 18px 17px;
+  background-color: #1D1F24;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-prev .banner-prev-icon:hover {
+  background-color: #FF565C;
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-next .banner-next-icon {
+  padding: 18px 17px;
+  background-color: #1D1F24;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-next .banner-next-icon:hover {
+  background-color: #FF565C;
+}
+.banner-item-link {
+  color: #FFFFFF;
+  padding: 5px 30px 10px 25px;
+  background-color: #FF565C;
+}
+.banner-item-title {
+  font-size: 32px;
+  color: #FFFFFF;
+  line-height: 1.5;
+  padding-top: 39px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.banner-item-text {
+  font-family: lato-regular;
+  font-size: 18px;
+  color: #DADADB;
+  max-width: 470px;
+  margin: auto;
+}
+.banner-info {
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  text-align: center;
+}
+.banner-info .banner-info-icon:last-child {
+  padding-right: 0px;
+}
+.banner-info .banner-info-icon {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: lato-medium;
+  padding-right: 13px;
+}
+.banner-info .banner-info-icon img {
+  padding-right: 10px;
+}
+@media screen and (max-width: 1255px) {
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item {
+    top: 90px;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item .banner-item-title {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main-content {
+    padding: 40px 20px 0px 20px;
+    display: block;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper {
+    padding-bottom: 16px;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner {
+    padding-top: 79.81%;
+    background-image: url(../images/green-chameleon-1761362.jpg);
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item {
+    top: 111px;
+    max-width: 470px;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item .banner-item-title {
+    padding-top: 42px;
+    font-size: 32px;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item .banner-item-text {
+    line-height: 1.4;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-content {
+    padding: 20px 20px 0px 20px;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper {
+    padding-bottom: 20px;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner {
+    padding-top: 131.64%;
+    background-image: url(../images/green-chameleon-1761361.jpg);
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item {
+    top: 92px;
+    max-width: 290px;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item .banner-item-title {
+    font-size: 26px;
+    padding-top: 30px;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item .banner-item-text {
+    display: none;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-info {
+    bottom: 32px;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-prev {
+    display: none;
+  }
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-next {
+    display: none;
+  }
+}
+@media screen and (max-width: 330px) {
+  .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item .banner-item-title {
+    font-size: 24px;
+  }
+}
+.main-content .main-content-left .section-list .container .list-wrapper {
+  padding-bottom: 18px;
+  display: flex;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content {
+  background-color: #FFFFFF;
+  width: 31.23%;
+  border: 1px solid #EBEBEB;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content .list-wrapper-item {
+  padding-top: 29px;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content .list-wrapper-item .list-title {
+  color: #1D1F24;
+  font-size: 14px;
+  padding-left: 25px;
+  margin-bottom: 6px;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content .list-wrapper-item .list-item ul {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content .list-wrapper-item .list-item ul li:last-child {
+  border-bottom: none;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content .list-wrapper-item .list-item ul li {
+  display: flex;
+  padding: 26px 25px 25px 25px;
+  list-style-type: none;
+  font-size: 18px;
+  border-bottom: 1px solid #EBEBEB;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content .list-wrapper-item .list-item ul li .list-item-count {
+  color: #DADADB;
+  padding-right: 25px;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content .list-wrapper-item .list-item ul li .list-item-title {
+  font-family: lato-medium;
+  color: #1D1F24;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper {
+  width: 68.77%;
+  padding-left: 32px;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image .banner-item-link:nth-child(2) {
+  display: none;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 32px;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image {
+  margin-bottom: 0px;
+  padding-top: 86.7%;
+  background-image: url(../images/igor-son-285029.jpg);
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image .list-product-title {
+  max-width: 100%;
+}
+.main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image:nth-child(2) {
+  background-image: url(../images/crew-22235.jpg);
+}
+.list-product-image {
+  width: 100%;
+  padding-top: 41.26%;
+  background-image: url(../images/oliur-rahman-272875.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+  margin-bottom: 32px;
+}
+.list-product-image .banner-item-link {
+  position: absolute;
+  left: 0px;
+  top: 30px;
+}
+.list-product-image .list-product-title {
+  font-family: lato-semibold;
+  font-size: 24px;
+  color: #FFFFFF;
+  position: absolute;
+  left: 25px;
+  top: 97px;
+  max-width: 410px;
+}
+.list-product-image .banner-info {
+  bottom: 25px;
+  text-align: left;
+  left: 25px;
+}
+@media screen and (max-width: 1255px) {
+  .main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content .list-wrapper-item .list-item ul li .list-item-title {
+    font-size: 16px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image .banner-item-link {
+    top: 0px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image .list-product-title {
+    left: 15px;
+    top: 55px;
+    font-size: 20px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image .banner-info {
+    left: 15px;
+    bottom: 15px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main-content .main-content-left .section-list .container .list-wrapper {
+    padding-bottom: 16px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content {
+    width: 40.39%;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content .list-wrapper-item .list-item ul li .list-item-title {
+    line-height: 1.48;
+    font-size: 18px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper {
+    width: 59.61%;
+    padding-left: 16px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image:first-child .banner-item-link:nth-child(1) {
+    display: none;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image {
+    order: 1;
+    background-image: url(../images/crew-22235tab.jpg);
+    padding-top: 80.38%;
+    margin-bottom: 0px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image .banner-item-link:nth-child(2) {
+    display: block;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image .banner-item-link {
+    top: 30px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image .list-product-title {
+    max-width: 360px;
+    left: 25px;
+    top: 97px;
+    font-size: 24px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image .banner-info {
+    bottom: 25px;
+    left: 25px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner {
+    display: block;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image {
+    padding-top: 65.55%;
+    background-image: url(../images/igor-son-285029tab.jpg);
+    margin-bottom: 16px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image .list-product-title {
+    max-width: 210px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image:nth-child(1) .banner-item-link {
+    display: block;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-content .main-content-left .section-list .container .list-wrapper {
+    padding-bottom: 20px;
+    display: block;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-wrapper-content .list-wrapper-item .list-item ul li {
+    padding-bottom: 22px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-image {
+    display: none;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image:first-child {
+    display: block;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image {
+    margin-bottom: 0px;
+    background-image: url(../images/oliur-rahman-123819mobile.jpg);
+    padding-top: 81.55%;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image .list-product-title {
+    max-width: 210px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image .banner-info {
+    bottom: 15px;
+  }
+  .main-content .main-content-left .section-list .container .list-wrapper .list-product-wrapper .list-product .list-product-inner .list-product-image .list-product-title {
+    font-size: 20px;
+  }
+}
+.main-content .main-content-right .content-right .container .content-wrapper {
+  padding-left: 32px;
+}
+.main-content .main-content-right .content-right .container .content-wrapper .list-product-image {
+  padding-top: 86.7%;
+  background-image: url(../images/oliur-rahman-123819.jpg);
+}
+.main-content .main-content-right .content-right .container .content-wrapper .list-product-image:last-child {
+  background-image: url(../images/dose-media-344938.jpg);
+}
+.main-content .main-content-right .content-right .container .content-wrapper .product-text {
+  background-color: #FF565C;
+  padding: 25px 25px 41px 25px;
+  margin-bottom: 32px;
+}
+.main-content .main-content-right .content-right .container .content-wrapper .product-text .banner-item-title {
+  text-align: left;
+  padding: 0px;
+  padding-bottom: 21px;
+}
+.main-content .main-content-right .content-right .container .content-wrapper .product-text .banner-item-text {
+  padding-bottom: 34px;
+  line-height: 1.7;
+  color: #FFFFFF;
+}
+.main-content .main-content-right .content-right .container .content-wrapper .product-text .read-more {
+  border: 1px solid #FFFFFF;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding: 14px 67px 20px 67px;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+.main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper {
+  display: none;
+}
+@media screen and (max-width: 1255px) {
+  .main-content .main-content-right .content-right .container .content-wrapper .list-product-image .banner-item-link {
+    top: 0px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .list-product-image .list-product-title {
+    left: 15px;
+    top: 55px;
+    font-size: 20px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .list-product-image .banner-info {
+    left: 15px;
+    bottom: 15px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main-content .main-content-right .content-right .container .content-wrapper {
+    padding-left: 0px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .list-product-image:first-child {
+    display: none;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .list-product-image:last-child {
+    display: none;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-text {
+    margin-bottom: 20px;
+    padding-bottom: 33px;
+    padding-right: 20px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-text .banner-item-title,
+  .main-content .main-content-right .content-right .container .content-wrapper .product-text .banner-item-text {
+    max-width: 100%;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-text .banner-item-text {
+    padding-bottom: 32px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-text .banner-item-title {
+    padding-bottom: 20px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper {
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper .list-product-image {
+    display: block;
+    padding-top: 79.96%;
+    background-image: url(../images/dose-media-344938tab.jpg);
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper .list-product-image .banner-item-link {
+    top: 30px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper .list-product-image .list-product-title {
+    max-width: 360px;
+    left: 25px;
+    top: 97px;
+    font-size: 24px;
+    max-width: 210px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper .list-product-image .banner-info {
+    bottom: 25px;
+    left: 25px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper .list-product-image:nth-child(2) {
+    background-image: url(../images/oliur-rahman-1238191tab.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-content .main-content-right .content-right .container .content-wrapper {
+    padding-bottom: 100px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-text {
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    padding-top: 36px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-text .banner-item-title,
+  .main-content .main-content-right .content-right .container .content-wrapper .product-text .banner-item-text {
+    max-width: 100%;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-text .banner-item-title {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper {
+    display: block;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper .list-product-image:nth-child(2) {
+    padding-top: 81.55%;
+    background-image: url(../images/igor-son-2850291mobile.jpg);
+    margin-bottom: 0px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper .list-product-image:nth-child(1) {
+    display: none;
+  }
+}
+@media screen and (max-width: 330px) {
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper .list-product-image .banner-info {
+    bottom: 15px;
+  }
+  .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper .list-product-image .list-product-title {
+    font-size: 20px;
+  }
+}
+footer {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+footer .container .footer-wrapper {
+  background-color: #1D1F24;
+  padding: 39px 40px 35px 40px;
+  display: flex;
+  align-items: center;
+}
+footer .container .footer-wrapper .logo {
+  width: 17.13%;
+}
+footer .container .footer-wrapper .logo .logo-link {
+  color: #494B4F;
+}
+footer .container .footer-wrapper .logo .logo-text:nth-child(2) {
+  padding-top: 6px;
+}
+footer .container .footer-wrapper .logo .logo-text {
+  font-family: lato-regular;
+  font-size: 14px;
+  color: #DADADB;
+}
+footer .container .footer-wrapper .header-menu {
+  width: 62.87%;
+}
+footer .container .footer-wrapper .header-menu .navbar-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .container .footer-wrapper .header-menu .navbar-nav .nav-item {
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px 0px;
+}
+footer .container .footer-wrapper .header-menu .navbar-nav .nav-item .nav-link {
+  padding: 0px;
+}
+footer .container .footer-wrapper .header-menu .navbar-nav .nav-item .nav-link:hover {
+  color: #FF565C;
+}
+footer .container .footer-wrapper .mail-follow-wrapper {
+  width: 32%;
+  text-align: right;
+}
+footer .container .footer-wrapper .mail-follow-wrapper .follow {
+  padding-bottom: 16px;
+}
+footer .container .footer-wrapper .mail-follow-wrapper .follow .follow-text {
+  font-family: lato-regular;
+  font-size: 14px;
+  color: #DADADB;
+}
+footer .container .footer-wrapper .mail-follow-wrapper .follow i {
+  color: #494B4F;
+  padding-left: 13px;
+  font-size: 17px;
+}
+footer .container .footer-wrapper .mail-follow-wrapper .mail-follow {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .container .footer-wrapper .mail-follow-wrapper .mail-follow .mail {
+  padding: 4px 24px;
+  border: none;
+  outline: none;
+}
+footer .container .footer-wrapper .mail-follow-wrapper .mail-follow .mail::placeholder {
+  padding-left: 15px;
+  font-family: lato-regular;
+  font-size: 14px;
+}
+footer .container .footer-wrapper .mail-follow-wrapper .mail-follow .subscribe {
+  font-weight: 500;
+  background-color: #FF565C;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 9px 33px;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1023px) {
+  footer .container .footer-wrapper {
+    flex-wrap: wrap;
+    padding: 42px 20px 50px 20px;
+    align-items: baseline;
+  }
+  footer .container .footer-wrapper .logo {
+    width: 33.65%;
+  }
+  footer .container .footer-wrapper .header-menu {
+    width: 66.35%;
+  }
+  footer .container .footer-wrapper .header-menu .navbar-nav {
+    display: grid;
+    grid-template-columns: 39.34% 38.3% 22.36%;
+  }
+  footer .container .footer-wrapper .mail-follow-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 42px;
+  }
+  footer .container .footer-wrapper .mail-follow-wrapper .follow {
+    order: 1;
+    padding-bottom: 0px;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .container .footer-wrapper {
+    padding: 39px 20px 58px 20px;
+    flex-direction: column;
+  }
+  footer .container .footer-wrapper .logo {
+    width: 100%;
+  }
+  footer .container .footer-wrapper .header-menu {
+    order: 1;
+    width: 100%;
+  }
+  footer .container .footer-wrapper .header-menu .navbar-nav {
+    grid-template-columns: 52% 48%;
+  }
+  footer .container .footer-wrapper .header-menu .navbar-nav .nav-item {
+    padding: 7px 0px;
+  }
+  footer .container .footer-wrapper .mail-follow-wrapper {
+    width: 100%;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  footer .container .footer-wrapper .mail-follow-wrapper .follow {
+    order: 1;
+    padding: 23px 0px 17px 0px;
+    padding-top: 23px;
+    padding-bottom: 17px;
+  }
+  footer .container .footer-wrapper .mail-follow-wrapper .follow,
+  footer .container .footer-wrapper .mail-follow-wrapper .mail-follow {
+    margin-right: auto;
+  }
+}

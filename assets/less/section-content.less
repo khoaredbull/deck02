@@ -1,0 +1,161 @@
+.main-content{
+    .main-content-right{
+        .content-right{
+            .container{
+                .content-wrapper{
+                    padding-left: 32px;
+                    .list-product-image{   
+                        padding-top: 86.7%;
+                        background-image: url(../images/oliur-rahman-123819.jpg);
+                    }
+                    .list-product-image:last-child{
+                        background-image: url(../images/dose-media-344938.jpg);
+                    }
+                    
+                    .product-text{
+                        background-color: @bg-color-3;
+                        padding: 25px 25px 41px 25px;
+                        margin-bottom: 32px;
+                        .banner-item-title{
+                            text-align: left;
+                            padding: 0px;
+                            padding-bottom: 21px;
+                        }
+                        .banner-item-text{
+                            padding-bottom: 34px;
+                            line-height: 1.7;
+                            color: @f-color-2;
+                        }
+                        
+                        .read-more{
+                            border: 1px solid @f-color-2;
+                            font-weight: @fw-oswald-semibold;
+                            color: @f-color-2;
+                            padding: 14px 67px 20px 67px;
+                            background-color: transparent;
+                            font-size: @f-size-4;
+                            cursor: pointer;
+                        }
+                    } 
+                    .product-image-wrapper{
+                        display: none;
+                    }             
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 1255px){
+    .main-content .main-content-right .content-right .container .content-wrapper{
+        .list-product-image{
+            .banner-item-link{
+                top: 0px;
+            }
+            .list-product-title{
+                left: 15px;
+                top: 55px;
+                font-size: 20px;
+            }
+            .banner-info{
+                left: 15px;
+                bottom: 15px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1023px){
+    .main-content .main-content-right .content-right .container
+    .content-wrapper{
+        padding-left: 0px;       
+        & .list-product-image:first-child{
+            display: none;
+        }
+        & .list-product-image:last-child{
+            display: none;
+        }
+        .product-text{
+            margin-bottom: 20px;
+            padding-bottom: 33px;
+            padding-right: 20px;
+            .banner-item-title, .banner-item-text{
+                max-width: 100%;
+            }
+            .banner-item-text{
+                padding-bottom: 32px;
+            }
+            .banner-item-title{
+                padding-bottom: 20px;
+            }
+        }
+        .product-image-wrapper{
+            display: block;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 16px;
+            .list-product-image{
+                display: block;
+                padding-top: 79.96%;
+                background-image: url(../images/dose-media-344938tab.jpg);
+                .banner-item-link{
+                    top: 30px;
+                }
+                .list-product-title{
+                    max-width: 360px;
+                    left: 25px;
+                    top: 97px;
+                    font-size: @f-size-6;
+                    max-width: 210px;
+                }
+                .banner-info{
+                    bottom: 25px;
+                    left: 25px;
+                }
+            }
+            & .list-product-image:nth-child(2){
+                background-image: url(../images/oliur-rahman-1238191tab.jpg);
+            }
+        }
+    }      
+}
+@media screen and (max-width: 767px){
+    .main-content .main-content-right .content-right .container
+    .content-wrapper{ 
+        padding-bottom: 100px;    
+        .product-text{
+            margin-bottom:20px;
+            padding-bottom: 40px;
+            padding-top: 36px;
+            .banner-item-title, .banner-item-text{
+                max-width: 100%;
+            }
+            .banner-item-title{
+                font-size: @f-size-7;
+                font-weight: @fw-oswald-medium;
+            }
+        }
+        .product-image-wrapper{
+            display: block;           
+            & .list-product-image:nth-child(2){
+                padding-top: 81.55%;
+                background-image: url(../images/igor-son-2850291mobile.jpg);
+                margin-bottom: 0px;
+            }
+            & .list-product-image:nth-child(1){
+                display: none;
+            }
+        }
+    }      
+}
+@media screen and (max-width: 330px){
+    .main-content .main-content-right .content-right .container .content-wrapper .product-image-wrapper
+    .list-product-image{
+        .banner-info{
+            bottom: 15px;
+        }
+        .list-product-title{
+            font-size: 20px;
+        }
+    }
+}
+

@@ -129,6 +129,30 @@ header .header-wrapper .navbar .navbar-toggler .fa-bars {
 .main-content .main-content-left .section-banner .container .banner-wrapper {
   padding-bottom: 32px;
 }
+.main-content .main-content-left .section-banner .container .banner-wrapper .slick-prev,
+.main-content .main-content-left .section-banner .container .banner-wrapper .slick-next {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .slick-prev {
+  left: 0px;
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .slick-prev::before {
+  content: "";
+  font-family: none;
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .slick-next {
+  right: 40px;
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .slick-next::before {
+  content: "";
+  font-family: none;
+}
+.main-content .main-content-left .section-banner .container .banner-wrapper .slick-dots {
+  display: none;
+}
 .main-content .main-content-left .section-banner .container .banner-wrapper .banner {
   position: relative;
   width: 100%;
@@ -146,28 +170,6 @@ header .header-wrapper .navbar .navbar-toggler .fa-bars {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-}
-.main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-prev .banner-prev-icon {
-  padding: 18px 17px;
-  background-color: #1D1F24;
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-prev .banner-prev-icon:hover {
-  background-color: #FF565C;
-}
-.main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-next .banner-next-icon {
-  padding: 18px 17px;
-  background-color: #1D1F24;
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-next .banner-next-icon:hover {
-  background-color: #FF565C;
 }
 .banner-item-link {
   color: #FFFFFF;
@@ -191,9 +193,11 @@ header .header-wrapper .navbar .navbar-toggler .fa-bars {
 }
 .banner-info {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 35px;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 .banner-info .banner-info-icon:last-child {
   padding-right: 0px;
@@ -203,9 +207,24 @@ header .header-wrapper .navbar .navbar-toggler .fa-bars {
   font-size: 13px;
   font-family: lato-medium;
   padding-right: 13px;
+  display: flex;
 }
 .banner-info .banner-info-icon img {
   padding-right: 10px;
+}
+.slick-prev-inner,
+.slick-next-inner {
+  width: 60px;
+  height: 60px;
+  background-color: #1D1F24;
+  position: relative;
+}
+.slick-prev-inner img,
+.slick-next-inner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 1255px) {
   .main-content .main-content-left .section-banner .container .banner-wrapper .banner .banner-item {
@@ -364,6 +383,7 @@ header .header-wrapper .navbar .navbar-toggler .fa-bars {
   max-width: 410px;
 }
 .list-product-image .banner-info {
+  transform: translateX(0%);
   bottom: 25px;
   text-align: left;
   left: 25px;
@@ -492,6 +512,7 @@ header .header-wrapper .navbar .navbar-toggler .fa-bars {
 .main-content .main-content-right .content-right .container .content-wrapper .list-product-image {
   padding-top: 86.7%;
   background-image: url(../images/oliur-rahman-123819.jpg);
+  transform: translateX(0%);
 }
 .main-content .main-content-right .content-right .container .content-wrapper .list-product-image:last-child {
   background-image: url(../images/dose-media-344938.jpg);

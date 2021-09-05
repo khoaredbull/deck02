@@ -11,6 +11,30 @@
             .container{
                 .banner-wrapper{
                     padding-bottom: 32px;
+                    .slick-prev, .slick-next{
+                        z-index: 10;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);                       
+                    }
+                    .slick-prev{
+                        left: 0px;
+                        
+                        &::before{
+                            content: "";                           
+                            font-family: none;
+                        }                       
+                    }
+                    .slick-next{
+                        right: 40px;                       
+                        &::before{
+                            content: "";                           
+                            font-family: none;
+                        }
+                    }
+                    .slick-dots{
+                        display: none;
+                    }
                     .banner{
                         position: relative;
                         width: 100%;
@@ -28,35 +52,7 @@
                                 transform: translateX(-50%); 
                                 text-align: center;                                    
                             }
-                                
-                            .banner-prev{
-                                .banner-prev-icon{
-                                    padding: 18px 17px;
-                                    background-color: @bg-color-4;
-                                    position: absolute;
-                                    left: 0px;
-                                    top: 50%;
-                                    transform: translateY(-50%);
-                                    &:hover{
-                                        background-color: @bg-color-3;
-                                    }
-                                }
-                            }
-                            .banner-next{
-                                .banner-next-icon{
-                                    padding: 18px 17px;
-                                    background-color: @bg-color-4;
-                                    position: absolute;
-                                    right: 0px;
-                                    top: 50%;
-                                    transform: translateY(-50%);
-                                    &:hover{
-                                        background-color: @bg-color-3;
-                                    }
-                                }
-                            }
-                            
-                        
+                                                   
                     }               
                 }
             }
@@ -85,9 +81,11 @@
 }
 .banner-info{
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 35px;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
     & .banner-info-icon:last-child{
         padding-right: 0px;
     }
@@ -95,13 +93,25 @@
         color: @f-color-2;
         font-size: @f-size-2;
         font-family: lato-medium;
-        padding-right: 13px;                                 
+        padding-right: 13px;      
+        display: flex;                           
         img{
             padding-right: 10px;
         }
     }
 }
-
+.slick-prev-inner, .slick-next-inner{
+    width: 60px;
+    height: 60px;
+    background-color: @bg-color-4;
+    position: relative;
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 @media screen and (max-width: 1255px){
     .main-content .main-content-left .section-banner .container .banner-wrapper .banner 
     .banner-item{

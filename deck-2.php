@@ -7,7 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./slick-theme.css">
+    <link rel="stylesheet" href="./slick.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Deck</title>
 </head>
@@ -25,5 +26,10 @@
       </div>
     </div>
     <?php include "footer.php"; ?>
+
+    <SCript src="./jquery.js"></SCript>
+    <script src="./slick.min.js"></script>
+    <script src="./main.js"></script>
+   
 </body>
 </html>
